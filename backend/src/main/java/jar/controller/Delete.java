@@ -13,7 +13,7 @@ public class Delete {
     @Autowired
     StudentRepo db;
     @DeleteMapping("/api/delete/{id}")
-    public String getMethodName(@PathVariable long id) {
+    public String DeletebyId(@PathVariable long id) {
      
         db.deleteById(id);
         return "deleted";
